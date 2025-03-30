@@ -37,8 +37,6 @@ An advanced trading analysis and prediction platform powered by machine learning
 - Interactive charts with Plotly
 - Real-time market data updates
 - Customizable analysis parameters
-- Educational content and tutorials
-- Dark mode support
 
 ## 🛠️ Setup
 
