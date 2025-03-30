@@ -1,58 +1,54 @@
-# 🚀 AI Trading Pro 2 - Enhanced Viewing & Prediction
+# 🚀 AI Trading Pro 2
 
-An advanced trading analysis and portfolio optimization platform built with Streamlit, featuring real-time market data analysis, LSTM-based price predictions, and portfolio optimization.
+An advanced trading analysis and prediction platform powered by machine learning and technical analysis.
 
 ## 🌟 Features
 
-### 📊 Technical Analysis
-- Real-time candlestick charts
-- Technical indicators (RSI, SMA, Bollinger Bands)
+### 1. Enhanced Technical Analysis
+- 'Real-time' market data analysis
+- Advanced technical indicators (RSI, MACD, Bollinger Bands)
 - Volatility clustering detection
-- Market sentiment analysis
+- Multi-timeframe analysis
+- Market regime identification
 
-### 🔮 Price Predictions
-- LSTM-based price forecasting
-- 30-day future price predictions
-- Confidence metrics
-- Model training interface
+### 2. AI-Powered Predictions
+- Basic LSTM model for price prediction
+- Enhanced multi-modal model with:
+  - Technical indicators integration
+  - News sentiment analysis
+  - Market regime detection
+  - Volume analysis
+  - Volatility indicators
 
-### ⚖️ Portfolio Optimization
-- Multi-asset portfolio optimization
-- Risk-adjusted return maximization
-- Minimum volatility optimization
-- Interactive portfolio allocation visualization
+### 3. Portfolio Optimization
+- Modern portfolio theory implementation
+- Risk-adjusted return optimization
+- Asset allocation recommendations
+- Performance metrics calculation
+- Visual portfolio analysis
 
-### 📈 Market Data
-- Real-time market data integration
-- Top gainers and losers tracking
-- Most active stocks monitoring
-- Sentiment analysis from Finviz
+### 4. Market Sentiment Analysis
+- News sentiment integration via Alpha Vantage API
+- Social sentiment analysis
+- Market mood indicators
+- Sentiment-based trading signals
 
-## 🛠️ Requirements
+### 5. User Interface
+- Interactive charts with Plotly
+- Real-time market data updates
+- Customizable analysis parameters
+- Educational content and tutorials
+- Dark mode support
 
-```txt
-streamlit>=1.24.0
-yfinance>=0.2.18
-pandas>=1.5.3
-numpy>=1.24.3
-plotly>=5.13.1
-beautifulsoup4>=4.12.2
-pandas-ta>=0.3.14b
-pypfopt>=1.5.5
-tensorflow>=2.12.0
-scikit-learn>=1.2.2
-requests>=2.28.2
-```
-
-## 🚀 Installation
+## 🛠️ Setup
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/viewinghood/Revo_Trader.git
+git clone https://github.com/yourusername/Revo_Trader2.git
 cd Revo_Trader
 ```
 
-2. Create a virtual environment:
+2. Create and activate a virtual environment:
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -63,50 +59,68 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 💻 Usage
+4. Configure API keys:
+   - Copy `config.py.example` to `config.py`
+   - Get an Alpha Vantage API key from https://www.alphavantage.co/
+   - Replace `YOUR_API_KEY_HERE` in `config.py` with your actual API key
 
-1. Start the Streamlit server:
+5. Run the application:
 ```bash
 streamlit run app.py
 ```
 
-2. Open your browser and navigate to the URL shown in the terminal (typically http://localhost:8501)
+## 📊 Usage
 
-3. Select your desired asset class and symbol from the sidebar
+1. **Analysis Tab**
+   - Choose between Basic LSTM and Enhanced Multi-Modal models
+   - Select asset class and symbol
+   - Choose analysis timeframe
+   - View technical indicators and market sentiment
+   - Get trading signals
 
-4. Use the tabs to access different features:
-   - 📊 Analysis: Technical analysis and market data
-   - 🔮 Predictions: Price forecasting
-   - ⚖️ Portfolio: Portfolio optimization
-   - 📚 Academy: Trading education
+2. **Predictions Tab**
+   - Choose between Basic LSTM and Enhanced Multi-Modal models
+   - Train models with historical data
+   - Generate price predictions
+   - View confidence metrics
 
-## 🔧 Advanced Features
+3. **Portfolio Tab**
+   - Select multiple assets
+   - Optimize portfolio allocation
+   - View risk metrics and performance indicators
+   - Analyze portfolio composition
 
-### Portfolio Optimization
-- Select multiple assets
-- Choose optimization strategy (Max Sharpe or Min Volatility)
-- View optimal allocation and performance metrics
-- Interactive portfolio visualization
+4. **Academy Tab**
+   - Learn about trading strategies
+   - Understand technical indicators
+   - Access educational resources
+   - Get started with trading
 
-### Price Predictions
-- Train custom LSTM models
-- Generate 30-day price forecasts
-- View prediction confidence metrics
-- Historical vs. predicted price comparison
+## 🔒 Security
 
-## 📝 Notes
+- API keys are stored securely in `config.py`
+- `config.py` is excluded from version control
+- Sensitive data is never exposed in logs or error messages
 
-- The LSTM model is derived on request
-- Portfolio optimization requires at least 2 assets
-- Market sentiment analysis requires internet connection
-- Some features may require additional API keys
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## ⚠️ Disclaimer
+
+This application is for educational purposes only. Always do your own research and never invest more than you can afford to lose.
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 (Generation of this file out of Cursor)
-Personal note: Thanks to the original author and the lot of bugs I have learned so much...THX :) 
+Personal note: Thanks to the original author and the lot of bugs - I have learned so much...THX :) 

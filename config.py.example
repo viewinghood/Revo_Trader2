@@ -1,0 +1,7 @@
+"""
+Example configuration settings for the trading application.
+Copy this file to config.py and replace the placeholder values with your actual API keys.
+"""
+
+# Alpha Vantage API Configuration
+ALPHA_VANTAGE_API_KEY = "YOUR_API_KEY_HERE"  # Get your API key from https://www.alphavantage.co/ 

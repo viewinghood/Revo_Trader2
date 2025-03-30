@@ -1,8 +1,13 @@
 # Ignore model files
 lstm_model.h5
+enhanced_lstm_model.h5
 
 # Ignore documentation
 project_documentation.md
+README.md.backup
+
+# Ignore configuration files with sensitive data
+config.py
 
 # Python
 __pycache__/
